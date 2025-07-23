@@ -1,0 +1,15 @@
+1) pipenv shell : to activate envirement
+2)pip install django
+3)django-admin startproject projectname : start prog
+4) cd projectname : to go to project directory
+5) python manage.py runserver : to run server
+6) python manage.py makemigrations : to make migrations
+7) python manage.py migrate : to migrate database
+8) python manage.py createsuperuser : to create superuser
+9) python manage.py startapp appname : to create app
+10) python manage.py runserver : to run server
+11) python manage.py collectstatic : to collect static files
+12) python manage.py test : to run tests
+13) python manage.py sqlmigrate appname 0001 : to see sql query
+14) python manage.py dbshell : to open database shell
+15) python manage.py showmigrations : to show migrations
