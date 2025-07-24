@@ -1,3 +1,11 @@
+import os
+import django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "managementsys.settings")
+django.setup()
+
+from myapp.models import Tour
+
 #!/usr/bin/env python
 """Django's command-line utility for administrative tasks."""
 import os

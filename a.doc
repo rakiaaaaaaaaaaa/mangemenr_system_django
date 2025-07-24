@@ -13,3 +13,32 @@
 13) python manage.py sqlmigrate appname 0001 : to see sql query
 14) python manage.py dbshell : to open database shell
 15) python manage.py showmigrations : to show migrations
+
+1)import os
+import django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "managementsys.settings")
+django.setup()
+
+from myapp.models import Tour
+
+2)import sys
+sys.path.append("C:/Users/olaol/OneDrive - Ministere de l'Enseignement Superieur et de la Recherche Scientifique/Bureau/New folder (2)/All_project_finale/E-commerce/learn/managementsys")
+
+3)from myapp.models import Tour
+
+Tour.objects.create(
+    origin_country="Libanon",
+    destination_country="Espagne",
+    number_of_nights=4,
+    price=200
+)
+////////////////////
+<h1> Django admin dashbord<h1>
+python manage.py createsuperuser
+
+Username (leave blank to use 'olaol'): R
+akia
+Email address: roritarorita765@gmail.com
+
+Password: rakia
