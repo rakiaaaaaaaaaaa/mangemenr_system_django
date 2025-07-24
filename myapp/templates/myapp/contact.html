@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="{% static 'style/styles.css' %}" />
+  <script src="{% static 'js/script.js' %}"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero-container">
+    <div class="card">
+      <img src="{% static 'images/logo1.jpg' %}" alt="Logo" class="logo" />
+      <h1>Contact Us</h1>
+      <p>Have a question or comment? Fill out the form below.</p>
+
+      <form method="post" class="contact-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="cta-button">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

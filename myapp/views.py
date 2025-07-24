@@ -15,9 +15,9 @@ def home_view(request):
 def contact_view(request):
     if request.method =='POST':
         form =ContactForm(request.POST)
-        if form.isValid():
+        if form.is_valid():
             form.send_email()
-            return redirect('contact success')
+            return redirect('contact_success')
     else:
         form = ContactForm()
     context = { 'form': form}    
